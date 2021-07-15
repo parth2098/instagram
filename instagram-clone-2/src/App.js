@@ -209,7 +209,14 @@ useEffect (()=>{
       
       
 
-      <h1>Jai Swaminarayan🙏</h1>
+      
+      {user?.displayName ? (
+        <h1>Hello,  {user.displayName}</h1>
+      ) : (
+        <h3>Sorry You need Login </h3>
+      )
+      }
+      
       {/*Posts*/}
       <div className="app__post">
         <div className="app__postLeft">
